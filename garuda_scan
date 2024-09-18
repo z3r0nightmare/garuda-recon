@@ -3,6 +3,10 @@
 source ./garuda.lib.sh
 greeting
 options
-read DOMAIN_NAME
+read DOMAIN
+
+
 wildcard_filtering
+subdomain_enumeration
+
 
