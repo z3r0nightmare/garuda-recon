@@ -45,6 +45,8 @@ subdomain_enumeration(){
     cat ~/bug-bounty/programs/${DOMAIN}/${DOMAIN}_scope/${DOMAIN}_temp | sort | uniq > ~/bug-bounty/programs/${DOMAIN}/${DOMAIN}_scope/${DOMAIN}_subdomains
 
 
+    amass enum -active -df ~/bug-bounty/programs/${DOMAIN}/${DOMAIN}_scope/${DOMAIN}_wildcard_scope -o  ~/bug-bounty/programs/${DOMAIN}/${DOMAIN}_scope/${DOMAIN}_amass_output
+
 }
 
 
